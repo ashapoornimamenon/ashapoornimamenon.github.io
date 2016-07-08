@@ -27,6 +27,12 @@ a:visited {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* Styles for the alternating / transition effect. */
@@ -39,7 +45,7 @@ a:visited {
 }
 /* Background image URLs and "stack" order. */
 .first-image {
-    background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
+    background-image: url('/home/asha/Pictures/6780191-Website-Internet-Word-Cloud-as-a-Background-Stock-Photo-websites-website.jpg');
     z-index: -3;
     opacity: 0;
 }
@@ -84,21 +90,22 @@ function cycleBackgrounds() {
 
     }, 2000);
 };
+$(function () {
+    cycleBackgrounds();
+});
 
 </script>
 </head>
 <body>
-<script>
-$(function () {
-    cycleBackgrounds();
-});
-</script>
+
+
+
 <div class="background-image toggle-image first-image"></div>
 <div class="background-image toggle-image second-image"></div>
 <div class="background-image toggle-image third-image"></div>
 <div class="background-image toggle-image first-image show"></div>
 
-<p class="some-copy">Here is some cool copy about our website</p>
+<!--<p class="some-copy">Here is some cool copy about our website</p>-->
 <h1><a href="https://www.linkedin.com/in/ashapoornima-r-b8632aa9">#The backstreet walk of a female hacker!!</a></h1>
 
 </body>
